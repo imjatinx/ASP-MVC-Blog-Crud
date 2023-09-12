@@ -1,0 +1,52 @@
+﻿@model CRUD.Models.ViewModels.AddBlogRequest;
+
+
+<div class="bg-secondary bg-opacity-10 text-black">
+    <div class="container text-center">
+        <h1>Add New Blog - ADMIN</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 mx-auto">
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Heading</label>
+                    <input type="text" asp-for="Heading" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Page Title</label>
+                    <input type="text" asp-for="PageTitle" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Content</label>
+                    <input type="text" asp-for="Content" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ShortDescription</label>
+                    <input type="text" asp-for="ShortDescription" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">FeaturedImageUrl</label>
+                    <input type="text" asp-for="FeaturedImageUrl" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">UrlHandle</label>
+                    <input type="text" asp-for="UrlHandle" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Author</label>
+                    <input type="text" asp-for="Author" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="Visible" class="form-label">Visible</label>
+                    <input type="checkbox" asp-for="Visible">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
